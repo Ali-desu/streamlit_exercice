@@ -110,3 +110,5 @@ dmypy.json
 
 # Streamlit
 .streamlit/
+
+populate_db.py

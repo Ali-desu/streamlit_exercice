@@ -22,11 +22,11 @@ st.title("📚 Système de Gestion des Stages - ISCAE")
 def get_connection():
     try:
         return mysql.connector.connect(
-            host=os.getenv("DB_HOST", "127.0.0.1"),
-            port=int(os.getenv("DB_PORT", 3306)),
-            user=os.getenv("DB_USER", "root"),
-            password=os.getenv("DB_PASSWORD", ""),
-            database=os.getenv("DB_NAME", "iscaeproject")
+            host=os.getenv("AVN_HOST", "127.0.0.1"),
+            port=int(os.getenv("AVN_PORT", 3306)),
+            user=os.getenv("AVN_USER", "root"),
+            password=os.getenv("AVN_PASS", ""),
+            database=os.getenv("AVN_DB", "iscaeproject")
         )
     except Error as e:
         st.error(f"Erreur de connexion : {e}")
