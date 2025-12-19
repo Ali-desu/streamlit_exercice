@@ -5,7 +5,7 @@ from mysql.connector import Error
 import pandas as pd
 import os
 from dotenv import load_dotenv
-from src.queries import QUERIES  # Import des requêtes
+from queries import QUERIES  # Import des requêtes
 
 load_dotenv()
 
